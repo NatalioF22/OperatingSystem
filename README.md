@@ -12,7 +12,10 @@
 - [x] Step 6: Add `create` command to shell *can only do one line files
 
 ### How to Verify
-1. gcc -o loadFile loadFile.c
+1. Run the following
+   ```bash
+ gcc -o loadFile loadFile.c
+  ```
 
 2. Compile with
    ```bash
