@@ -14,7 +14,7 @@
 ### How to Verify
 1. Run the following
    ```bash
- gcc -o loadFile loadFile.c
+    gcc -o loadFile loadFile.c
   ```
 
 2. Compile with
