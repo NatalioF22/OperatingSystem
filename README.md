@@ -1,37 +1,48 @@
-<h1 align="center">comp350ProjectD</h1>
+<h1 align="center">Operating System</h1>
 
 ## Steps
 
-### Steps Completed:
-
-- [x] Step 1: Write the function `writeSector()`
-- [x] Step 2: Add `dir` command to the shell
-- [x] Step 3: Write function `deleteFile()`
-- [x] Step 4: Write the function `writeFile()`
-- [x] Step 5: Add `copy` command to the shell
-- [x] Step 6: Add `create` command to shell *can only do one line files
+### Completed Steps:
+- [x] **Step 1:** Implement the `writeSector()` function.
+- [x] **Step 2:** Integrate the `dir` command into the shell.
+- [x] **Step 3:** Develop the `deleteFile()` function.
+- [x] **Step 4:** Create the `writeFile()` function.
+- [x] **Step 5:** Add the `copy` command to the shell.
+- [x] **Step 6:** Introduce the `create` command to the shell (Note: currently supports only single-line files).
 
 ### How to Verify
-1. Run the following
-   ```bash
-    gcc -o loadFile loadFile.c
-  ```
 
-2. Compile with
+1. **Compile the Load File:**
+   Run the following command to compile `loadFile.c`:
    ```bash
-    ./compileOS.sh
-    ```
-3. Run with
+   gcc -o loadFile loadFile.c
+   ```
+
+2. **Compile the Operating System:**
+   Use the provided script to compile the OS:
+   ```bash
+   ./compileOS.sh
+   ```
+
+3. **Run the Simulator:**
+   Start the operating system simulator with:
+   ```bash
+   java -jar simulator.jar
+   ```
+
+4. **Test New Shell Commands:**
+   Try out the newly added commands in the shell:
+   - List directory contents:
      ```bash
-    java -jar simulator.jar
-    ```
-4. Test New Commands:
-   ```bash
-   dir
-   ```
-   ```bash
-   copy messag newmsg
-   ```
-   ```bash
-   create newfle
-   ```
+     dir
+     ```
+   - Copy a file:
+     ```bash
+     copy [source_file] [destination_file]
+     ```
+   - Create a new file:
+     ```bash
+     create [file_name]
+     ```
+
+---
